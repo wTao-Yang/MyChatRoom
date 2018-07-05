@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+ <link rel="stylesheet" type="text/css" href="css/easyui.css">
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+ <link rel="stylesheet" type="text/css" href="css/jquery.emoji.css">
+ <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">		
+ <link rel="stylesheet" href="css/font-awesome.4.6.0.css">
+ <link rel="stylesheet" href="css/amazeui.min.css">
+ <link rel="stylesheet" href="css/amazeui.cropper.css">
+ <link rel="stylesheet" href="css/custom_up_img.css">
+ <link rel="stylesheet" href="css/admin.css" />
+		<style type="text/css">
+			* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+	background:url(img/night.jpg);
+	width: 100%;
+	color: #525252;
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+}
+
+
+
+
+.circle{
+	margin: 10px;
+	padding: 0px 2px;
+	width: 20px;
+	height: 20px;
+	border-radius: 16px;
+	background-color: red;
+	color: white;
+}
+
+
+</style>	
+	</head>
+	<body>
+	<div id="container">
+		<div id="left">
+				<div id="headpic">
+					<img src="img/name.jpg"/>
+					<p id="name">Tao</p>
+				</div>
+				<div id="room-list">
+					<p id="h">聊天室</p><hr />
+					<div id="addroom" class="cColor">
+						<button>添加聊天室</button>	<hr/>
+					</div>
+					<ul>
+						<li class="myLi">
+							<img src="img/name.jpg">
+							<span>10266666</span>
+							<button class="cColor">-</button><br/>
+							<span class="circle">9</span>
+						</li><hr />
+						<li class="myLi">
+							<img src="img/night.jpg">
+							<span>信计154</span>
+							<button class="cColor">-</button>
+						</li><hr />
+						<li class="myLi">
+							<img src="img/left.jpg">
+							<span>zhku</span>
+							<button class="cColor">-</button>					
+						</li><hr />
+					</ul>
+				</div>
+			</div>
+		<div id="mid">
+			  	<div id="head">
+				<span>聊天室</span>
+				</div>
+				<hr />
+				<div id="chat-text">
+				<div class="chatRoom">
+				<ul class="chat-ul" >
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<img class="msgPic prePic"  src="img/left.jpg">
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/left.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>赖美云</p>
+					</li>
+					<li class="mychat-li clearfix">
+						<img class="myheadpic" src="img/name.jpg">
+						<span>Tao 2018-6-2 14:01</span>
+						<img id="myMsgPic" class="prePic" src="img/b1.jpg">
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="mychat-li clearfix">
+						<img class="myheadpic" src="img/name.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>ycyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+				</ul>
+				</div>
+				<div class="chatRoom">
+				<ul class="chat-ul" >
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<img class="msgPic" src="img/left.jpg">
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/left.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>赖美云</p>
+					</li>
+					<li class="mychat-li clearfix">
+						<img class="myheadpic" src="img/name.jpg">
+						<span>Tao 2018-6-2 14:01</span>
+						<p>ycyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="mychat-li clearfix">
+						<img class="myheadpic" src="img/name.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>ycyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+				</ul>
+				</div>
+			<div class="chatRoom">
+				<ul class="chat-ul" >
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<img class="msgPic" src="img/left.jpg">
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/left.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>赖美云</p>
+					</li>
+					<li class="mychat-li clearfix">
+						<img class="myheadpic" src="img/name.jpg">
+						<span>Tao 2018-6-2 14:01</span>
+						<p>ycyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="mychat-li clearfix">
+						<img class="myheadpic" src="img/name.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>ycyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+					<li class="chat-li clearfix">
+						<img class="infoPic" src="img/night.jpg"><span>Tao 2018-6-2 14:01</span>
+						<p>你菊姐</p>
+					</li>
+				</ul>
+				</div>
+				</div>
+			<hr />
+			<div id="face-pic">
+				<img id="face" src="img/face.png"/>
+				<img id="pic" src="img/pic.png"/>
+				<button>消息记录</button>
+			</div>
+			<hr />
+			<div id="footer">
+				<div id="myMsg" contenteditable="true">	
+				</div>
+				<div>
+				<button id="send">发送</button>
+				</div>
+			</div>
+			</div>
+		<div id="right">
+			<div id="users">
+				<h2 style="text-align: center;">在线用户列表</h2><hr />
+				<ul>
+					<li><img src="img/b1.jpg">
+					<span>Tao</span>
+					<button>禁言</button>
+					</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+					<li>name</li>
+				</ul>
+			</div>
+			<div id="myNotice">
+				<h2 style="text-align: center;">聊天室公告</h2>
+				<div id="mycontent" contenteditable="true">
+				<div>
+			</div>
+			</div>
+				<button >发布公告</button>
+			</div>
+		</div>
+	</div>
+	<div id="info">
+		<h3>个人信息</h3>
+		<div id="up-img-touch" class="up-img-touch">
+		<img src="">
+		</div>
+		<form action="" method="post" target="nm_iframe">
+		<span class="block">昵称：</span>
+		<input class="text" type="text" name="name" value="暂无"/><br />
+		<span class="block">年龄：</span>
+		<input class="text" type="text" name="title" value="暂无"/><br />
+		<span class="block">性别：</span>
+		<input class="text" type="text" name="partner" value="暂无" /><br />
+		<input id="btn" type="submit" name="submit" value="确认" onclick="deleteinfo()"/>
+		<button id="btn" onclick="deleteinfo()">取消</button>
+		</form>
+		</div>
+	
+	
+	<div id="roomLiInfo">
+		<h3>聊天室信息</h3>
+		<div id="up-img-touch" class="up-img-touch" >
+		<img src="">
+		</div>
+		<form action="" method="post" target="nm_iframe">
+		<span class="block">名字：</span>
+		<input class="text" type="text" name="roomName" id="roomName" value="暂无"/><br />
+		<span class="block">公告：</span>
+		<textarea class="text" name="notice" id="notice" style="resize: none;" rows="5">默认公告</textarea><br />
+		<input id="btn" type="submit" name="submit" value="确认" onclick="deleteinfo()"/>
+		<button id="btn" onclick="deleteinfo()">取消</button>
+		</form>
+	</div>
+	
+	<div id="otherInfo" onmouseleave="deleteinfo()">
+		<img src="img/name.jpg">
+		<table>
+			<tr><td class="tdright">昵称:</td><td class="tdleft">Tao</td></tr>
+			<tr><td class="tdright">年龄:</td><td class="tdleft">22</td></tr>
+			<tr><td class="tdright">性别:</td><td class="tdleft">男</td></tr>
+		</table>
+	</div>
+	<div>
+	<form name="picData">
+          <input type="file" name="screenshot" id="file" style="display: none;" onchange="imageshow(this)" accept="image/*"/>
+    </form>  
+    </div>
+    
+    //隐藏form刷新界面
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>  
+    
+    <!--图片上传框-->
+<div class="am-modal am-modal-no-btn up-frame-bj " tabindex="-1" id="doc-modal-1">
+  <div class="am-modal-dialog up-frame-parent up-frame-radius">
+	<div class="am-modal-hd up-frame-header">
+	   <label>修改头像</label>
+	  <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+	</div>
+	<div class="am-modal-bd  up-frame-body">
+	  <div class="am-g am-fl">
+		<div class="am-form-group am-form-file">
+		  <div class="am-fl">
+			<button type="button" class="am-btn am-btn-default am-btn-sm">
+			  <i class="am-icon-cloud-upload"></i> 选择要上传的文件</button>
+		  </div>
+		  <input type="file" id="inputImage">
+		</div>
+	  </div>
+	  <div class="am-g am-fl" >
+		<div class="up-pre-before up-frame-radius">
+			<img alt="" src="" id="image" >
+		</div>
+		<div class="up-pre-after up-frame-radius">
+			<img alt="" src="" id="image1" >
+		</div>
+	  </div>
+	  <div class="am-g am-fl">
+		<div class="up-control-btns">
+			<span class="am-icon-rotate-left"  onclick="rotateimgleft()"></span>
+			<span class="am-icon-rotate-right" onclick="rotateimgright()"></span>
+			<span class="am-icon-check" id="up-btn-ok" url="admin/user/upload.action"></span>
+		</div>
+	  </div>
+	  
+	</div>
+  </div>
+</div>
+
+<!--加载框-->
+<div class="am-modal am-modal-loading am-modal-no-btn" tabindex="-1" id="my-modal-loading">
+  <div class="am-modal-dialog">
+	<div class="am-modal-hd">正在上传...</div>
+	<div class="am-modal-bd">
+	  <span class="am-icon-spinner am-icon-spin"></span>
+	</div>
+  </div>
+</div>
+
+<!--警告框-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog">
+	<div class="am-modal-hd">信息</div>
+	<div class="am-modal-bd"  id="alert_content">
+			  成功了
+	</div>
+	<div class="am-modal-footer">
+	  <span class="am-modal-btn">确定</span>
+	</div>
+  </div>
+</div>
+    
+    
+	<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.easyui.min.js"></script>	
+	<script src="js/jquery.emoji.min.js"></script>	
+	<script src="js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="js/amazeui.min.js" charset="utf-8"></script>
+	<script src="js/cropper.min.js" charset="utf-8"></script>
+	<script src="js/custom_up_img.js" charset="utf-8"></script>
+	<script>
+		//加载事件
+		$(function(){
+			$("#room-list ul").on("click",".myLi",selectChatRoom);
+			$("#room-list ul").on("click",".myLi button",removeChatRoom);
+			$('#addroom button').bind('click',addRoom);
+			$("#room-list ul").on("mousedown mouseup",".myLi button,#addroom button",addButtonColor);
+			$('#send').bind('click',sendMsg);
+			$('#pic').bind('click',setpic);
+//			$('body').bind('click',deleteinfo);
+			$('#chat-text').on('click','.infoPic',tInfoWindow);
+			$('#headpic img').bind('click',twindow);
+//			$('#room-list ul').on('click',".myLi",bottomRight);
+			$('#room-list ul').on('click',".myLi",newPeople);
+			$('#chat-text').on('mouseover',"#myMsgPic,#MsgPic",viewPic);
+			$('.up-img-touch img').on('click',setHPic);
+			$('#room-list').on('click',".myLi img",updateInfo);	
+			$('#myNotice').on("click","button",sendNotice);
+		$("#myMsg").emoji({
+            button: "#face",
+            showTab: false,
+            animation: 'slide',
+            icons: [{
+                name: "QQ表情",
+                path: "img/img/qq/",
+                maxNum: 91,
+                file: ".gif"
+            }]
+        });
+        
+		})
+		
+		
+		function removeChatRoom(){
+			//ajax回复成功后remove
+			
+			$(this).parent().remove();
+		}
+		
+		function setHPic(){
+		$('.up-pre-before img').prop('src',$(this).prop('src'));
+		$('.up-pre-after img').prop('src',$(this).prop('src'));
+	}
+		
+		function updateInfo(){
+			
+			$('#roomLiInfo img').prop("src",$(this).prop('src'));
+			$('#roomLiInfo #roomName').val($(this).parent().find("span").text());
+//			$('#roomLiInfo #notice').val($(this).parent().find("span").text());
+			var y=screen.availHeight
+			var x=screen.availWidth;
+			$('#roomLiInfo').css('display','block');
+			$('#roomLiInfo').css('left',0.4*x);
+			$('#roomLiInfo').css('top',0.2*y);
+			
+			//禁止点击事件
+			$('#container').css('pointer-events','none');
+		}
+		
+			function viewPic(){
+			var x = 10;
+			var y = 20;
+			$(".prePic").mouseover(function(e){
+			
+			var tooltip = "<div id='tooltip'><img src='"+ this.src +"' alt='产品预览图'/><\/div>"; //创建 div 元素
+			$("body").append(tooltip);	//把它追加到文档中						 
+			$("#tooltip")
+			.css({
+				"top": (e.pageY+y) + "px",
+				"left":  (e.pageX+x)  + "px"
+			}).show("fast");	  //设置x坐标和y坐标，并且显示
+    		}).mouseout(function(){
+			$("#tooltip").remove();	 //移除 
+    		}).mousemove(function(e){
+			$("#tooltip")
+			.css({
+				"top": (e.pageY+y) + "px",
+				"left":  (e.pageX+x)  + "px"
+			});
+	});
+			}
+			
+			//添加聊天室
+			function addRoom(){
+				$.messager.prompt('新建聊天室', '请输入你要创建的聊天室名称:', function(r){
+				if (r){
+					var li=$("<li class='myLi'></li>");
+					$("#room-list ul").append(li);
+					li.append("<img src='img/night.jpg'>");
+					li.append("<span>"+r+"</span>");
+					li.append("<button class='cColor'>-</button>");
+					$("#room-list ul").append("<hr/>");
+				}
+			});						
+			}
+		
+			//加入时chatroom显示有人加入聊天室		
+			function newPeople(){
+			var a = $('.chatRoom .chat-ul').eq(i/2);	
+			var li = $("<li id='newPeople' class='clearfix'></li>").html("Tao"+"加入聊天室");
+			a.append(li);
+			var r=$('.chatRoom').eq(i/2);
+		}
+		
+		//设置input=file被点击
+		function setpic(){
+			$('#file').click();
+		}
+		
+		　//选择图片时获取图片数据
+　　　　	function imageshow(source){
+            var file = source.files[0];
+                if (window.FileReader) {
+                    var fr = new FileReader();
+                    fr.onloadend = function(e) {
+//                  console.log(this.result);
+					sendPic(e.target.result);
+//                  document.getElementById("portrait").src = e.target.result;
+                    };
+                fr.readAsDataURL(file);
+//              alert(document.aa.screenshot1.value);
+                  }
+　　    }
+
+
+		//设置聊天表情窗口
+		$("#face").click(function(){
+		   $("div#emoji_container_1").css({"margin-top":"-340px","margin-left":"20px"});
+		});
+			
+		//聊天窗口点击别人的头像弹出信息
+		function tInfoWindow(){
+			$('#info').css('display','none');
+			event.stopPropagation();
+			var x=event.pageX;
+			var y=event.pageY;
+			$('#otherInfo').css('display','block');
+			$('#otherInfo').css('left',x);
+			$('#otherInfo').css('top',y);
+			//禁止点击事件
+//			$('#container').css('pointer-events','none');
+		}
+		
+		//点击container隐藏弹框
+		function deleteinfo(){
+			$('#roomLiInfo').css('display','none');
+			$('#info').css('display','none');
+			$('#otherInfo').css('display','none');
+			$('#container').css('pointer-events','inherit');
+		}
+		
+		//+-号按钮变色
+		function addButtonColor(){
+			$(this).toggleClass("cColor");	
+		}
+		
+		
+		//点击本人头像弹出信息，input可修改
+		function twindow(){
+			$('#otherInfo').css('display','none');
+			$('#info img').prop('src',$(this).prop("src"));
+			event.stopPropagation();
+			var y=screen.availHeight
+			var x=screen.availWidth;
+			$('#info').css('display','block');
+			$('#info').css('left',0.4*x);
+			$('#info').css('top',0.2*y);
+			//禁止点击事件
+			$('#container').css('pointer-events','none');
+		}
+			
+		//选择聊天室	
+		var i;
+		function selectChatRoom(){
+			$('.chatRoom').hide();
+			
+			$("#room-list li").each(function(){
+				$(this).css("background-color","#292929");
+				$(this).find('button').css("background-color","#292929");
+			});
+				$(this).css("background-color","#949494");
+				$(this).find('button').css("background-color","#949494");
+				i = $(this).index();
+				
+				$("<div class='chatRoom'><ul class='chat-ul'></ul></div>").appendTo($('#chat-text'));
+				
+				$('.chatRoom').eq(i/2).css('display','block');
+				$('#head').html($(this).find('span').html());
+		}
+			
+		//加入聊天室	
+		function addChatRoom(){
+			//阻止冒泡，不让li的click事件同时触发
+			event.stopPropagation();
+			if($(this).html()=='+'){
+				$(this).html('-');
+				return false;
+			}
+			if($(this).html()=='-')
+			$(this).html('+');
+		}
+		
+		
+		//发送图片
+		function sendPic(data){
+			var a = $('.chatRoom .chat-ul').eq(i/2);	
+			var li = $("<li class='mychat-li clearfix'></li>");
+			a.append(li);
+			$("<img class='myheadpic' src='img/left.jpg'>").appendTo(li);
+			$("<span></span>").appendTo(li).text("Tao 2018-6-2 20:31");
+			$("<img id='myMsgPic' class='prePic'>").appendTo(li).attr('src',data);
+			var r=$('.chatRoom').eq(i/2);
+			var hei=r.get(0).scrollHeight;
+			r.scrollTop(hei);
+			
+		}
+		
+		//发送信息
+//		function sendMsg(){
+//			var a = $('.chatRoom .chat-ul').eq(i/2);	
+//			var li = $("<li class='mychat-li clearfix'></li>");
+//			a.append(li);
+//			var msg=$('#myMsg').html();
+//			$("<img class='myheadpic' src='img/left.jpg'>").appendTo(li);
+//			$("<span></span>").appendTo(li).text("Tao 2018-6-2 20:31");
+//			$("<p></p>").appendTo(li).html(msg);
+//			$('#myMsg').html("");
+//			var r=$('.chatRoom').eq(i/2);
+//			var hei=r.get(0).scrollHeight;
+//			r.scrollTop(hei);
+//		}	
+		
+			//发送图片(左边)
+//			function sendPic(data){
+//			var a = $('.chatRoom .chat-ul').eq(i/2);	
+//			var li = $("<li class='chat-li'></li>");
+//			a.append(li);
+//			$("<li class='clearfix'></li>").appendTo(a);
+//			$("<img class='infoPic' src='img/left.jpg'>").appendTo(li);
+//			$("<span></span>").appendTo(li).text("Tao 2018-6-2 20:31");
+//			$("<img id='msgPic' class='prePic'>").appendTo(li).attr('src',data);
+//			var r=$('.chatRoom').eq(i/2);
+//			var hei=r.get(0).scrollHeight;
+//			r.scrollTop(hei);
+//		}
+
+		
+		//发送信息(左边)
+		function sendMsg(){
+			var a = $('.chatRoom .chat-ul').eq(i/2);	
+			var li = $("<li class='chat-li'></li>");
+			a.append(li);
+			$("<li class='clearfix'></li>").appendTo(a);
+			var msg=$('#myMsg').html();
+			$("<img class='infoPic' src='img/left.jpg'>").appendTo(li);
+			$("<span></span>").appendTo(li).text("Tao 2018-6-2 20:31");
+			$("<p></p>").appendTo(li).html(msg);
+			$('#myMsg').html("");
+			var r=$('.chatRoom').eq(i/2);
+			r.scrollTop(r.get(0).scrollHeight);
+		}	
+		
+		
+			function sendNotice(){
+				//获取公告信息
+				var notice="notice::"+$('#mycontent').text();
+				bottomRight(notice);
+			}
+		
+			//右下角弹窗
+		    function bottomRight(data){
+           		 $.messager.show({
+	                title:"聊天室即时公告",
+	//              msg:'<h2>XXX上线了</h2> <br /><br />广告招租:联系人',
+					msg:data,
+	                showType:'show',
+	                height:'200px',
+	               	width:'15%'
+            	});
+        }
+	</script>
+	</body>
+</html>
